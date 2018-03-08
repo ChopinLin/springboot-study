@@ -1,0 +1,22 @@
+#配置注意事項  以冒號分割鍵值對 鍵+冒號+空白符+值。空白符必不可少
+server:
+  context-path: /study
+  port: 9090
+
+debug: true
+
+togglz:
+  enabled: true
+  console:
+    enabled: true
+    path: /togglzz
+    use-management-port: false
+
+flyway:
+  locations: /db
+
+#togglz.feature-enums=org.lxp.springboot.togglz.MyFeatures
+#togglz.features.FEATURE_ONE.enabled=false
+#togglz.features.FEATURE_TWO.enabled=false
+#togglz.features.FOO.enabled=true
+#togglz.features.BAR.enabled=false
