@@ -27,7 +27,9 @@ public class AppTest {
     @Blog("testReturn")
     public void test(){
         logger.info("before inc()");
-        inc();
+        try{int i = 3/0;}catch (Exception e){
+            System.out.println(e.getMessage());
+        }
         logger.info("after inc()");
     }
 
